@@ -17,18 +17,11 @@ input[type=text] {
 	padding: 6px 10px;
     margin: 8px 0;
     box-sizing: border-box;
-    font-size: 16px;
-}
-input[name=title] {
-	width: 35%;
-	font-size: 24px;
-}
-input[name=ingredient] {
-	width: 35%;
+    font-size: 14px;
+    width: 35%;
 }
 input[name=step] {
 	width: 70%;
-	height: 60px;
 }
 #container {
 	margin-bottom: 15px;
@@ -47,25 +40,9 @@ input[name=step] {
 	border-style: dashed;
 	border-color: red;
 }
-/*#add-more-ingredients {
-	border-color: red;
-	border-style: solid;
-	padding: 15px;
-	margin: 10px 0 25px 0;
-	display:inline-block;
-	text-align: center;
-	position: relative;
-	background-color:white;
+div {
+	font-size: 20px;
 }
-#add-more-steps {
-	border-color: red;
-	border-style: solid;
-	padding: 15px;
-	margin: 10px 0 15px 0;
-	display:inline-block;
-	text-align: center;
-	background-color:white;
-}*/
 button {
 	border-style:solid;
 	border-color: red;
