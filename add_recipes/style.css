@@ -1,4 +1,5 @@
 body {
+/* TODO: ALIGN THE PAGE BETTER*/
 	margin: 35px;
 	padding: 40px 60px 40px;
 	font-family: sans-serif;
@@ -28,6 +29,7 @@ input[name=step] {
 	margin-top: 30px;
 	position: relative;
 }
+/* TODO: ALIGN THIS BOX BETTER */;
 .upload {
 	position: absolute;
 	width: 300px;
