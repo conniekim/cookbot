@@ -1,13 +1,15 @@
 body {
-/* TODO: ALIGN THE PAGE BETTER*/
 	margin: 35px;
 	padding: 40px 60px 40px;
-	font-family: sans-serif;
-	width: 75%;
+	font-family: Helvetica,Arial,sans-serif;
+	width:50%;
  	margin:0 auto;
+ 	font-size:20px;
 }
 header {
 	font-size: 36px;
+	text-align: center;
+	margin-left: -7%;
 }
 ul {
 	list-style-type:none;
@@ -20,30 +22,28 @@ input[type=text] {
     box-sizing: border-box;
     font-size: 14px;
     width: 35%;
+    text-align: left;
 }
 input[name=step] {
-	width: 70%;
+	width: 90%;
 }
 #container {
 	margin-bottom: 15px;
 	margin-top: 30px;
-	position: relative;
+	position:relative;
+	border-color: black;
 }
-/* TODO: ALIGN THIS BOX BETTER */;
-.upload {
-	position: absolute;
-	width: 300px;
-	height: 300px;
-	top: 50px;
-	left: 550px;
+#upload {
+	position:absolute;
+	width: 350px;
+	height: 365px;
+	top: 25px;
+	left: 355px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	border-style: dashed;
 	border-color: red;
-}
-div {
-	font-size: 20px;
 }
 button {
 	border-style:solid;
@@ -54,7 +54,8 @@ button {
 	text-align: center;
 	display: inline-block;
 	background-color:#FFFFFF;
+	width:90%;
 }
-#save {
-	width:70%;
+#add-more-ingredients {
+	width: 35%;
 }
