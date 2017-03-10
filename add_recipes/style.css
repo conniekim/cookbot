@@ -31,7 +31,6 @@ input[name=step] {
 	margin-bottom: 15px;
 	margin-top: 30px;
 	position:relative;
-	border-color: black;
 }
 #upload {
 	position:absolute;
