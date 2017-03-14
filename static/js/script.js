@@ -39,8 +39,8 @@ $(document).ready(function() {
 		var root_form = $(box_button).find('form.recipe-button');
 		var view_recipe = $(recipe).first('span').text();
 		var view_ingredients = $(root_form).first('span').text();
-		$(recipe).first('span').html('<a href='+start_href+recipe_link+">"+view_recipe+"</a>");
-		$(root_form).first('span').html('<a href='+start_href+ingredients_link+">"+view_ingredients+"</a>");
+		$(recipe).first('span').html('<span><a href='+start_href+recipe_link+">"+view_recipe+"</a></span>");
+		$(root_form).first('span').html('<span><a href='+start_href+ingredients_link+">"+view_ingredients+"</a></span>");
 	}
 });
 
