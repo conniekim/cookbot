@@ -25,6 +25,23 @@ $(document).ready(function() {
 			$(steps_wrapper).append('<li><input type="text" name="step"></li>');
 		}
 	});
+	var all_recipe_boxes = document.getElementsByClassName('col-lg-12 recipe-box');
+	var start_href = window.location.href;
+	start_href = start_href.substring(0, start_href.lastIndexOf('/'));
+	for (var i=0; i<all_recipe_boxes.length; i++) {
+		var box = all_recipe_boxes[i];
+		var box_button = $(box).find(".recipe-buttons");
+		var title = $(box).find(".recipe-title").text();
+		var titleURL = encodeURIComponent(title);
+		var ingredients_link = "/ingredients.html?query="+titleURL;
+		var recipe_link = "/recipe.html?query="+titleURL;
+		var recipe = $(box_button).find('#view-recipe-button');
+		var root_form = $(box_button).find('form.recipe-button');
+		var view_recipe = $(recipe).first('span').text();
+		var view_ingredients = $(root_form).first('span').text();
+		$(recipe).first('span').html('<a href='+start_href+recipe_link+">"+view_recipe+"</a>");
+		$(root_form).first('span').html('<a href='+start_href+ingredients_link+">"+view_ingredients+"</a>");
+	}
 });
 
 function read_database() {
