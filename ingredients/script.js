@@ -1,6 +1,6 @@
 'use strict';
 $(document).ready(function() {
-	var query = window.location.search.split('=')[1];
+	var query = decodeURIComponent(window.location.search.split('=')[1]);
 	$.get("https://7x5anc9kic.execute-api.us-east-1.amazonaws.com/prod/RecipeUpdate?TableName=RecipesList", function(data, status) {
 		var json = JSON.parse(JSON.stringify(data));
 		var items = json.Items;
@@ -17,6 +17,8 @@ $(document).ready(function() {
 					}
 				}
 			}
+		} else {
+			$("#list").append("<ul> No recipe found. </ul>");
 		}
 	});
 });
