@@ -32,7 +32,7 @@ $(document).ready(function() {
 		var box = all_recipe_boxes[i];
 		var box_button = $(box).find(".recipe-buttons");
 		var title = $(box).find(".recipe-title").text();
-		var titleURL = encodeURIComponent(title);
+		var titleURL = encodeURIComponent(title.toLowerCase());
 		var ingredients_link = "/ingredients.html?query="+titleURL;
 		var recipe_link = "/recipe.html?query="+titleURL;
 		var recipe = $(box_button).find('#view-recipe-button');
