@@ -1,0 +1,73 @@
+body {
+	margin: 35px;
+	padding: 40px 60px 40px;
+	font-family: Helvetica,Arial,sans-serif;
+	width:50%;
+ 	margin:0 auto;
+ 	font-size:20px;
+}
+header {
+	font-size: 36px;
+	text-align: center;
+	margin-left: -7%;
+}
+ul {
+	list-style-type:none;
+	padding:0;
+	margin: 0;
+}
+input[type=text] {
+	padding: 6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 35%;
+    text-align: left;
+}
+input[name=step] {
+	width: 90%;
+}
+#container {
+	margin-bottom: 15px;
+	margin-top: 30px;
+	position:relative;
+}
+#upload {
+	position:absolute;
+	width: 350px;
+	height: 365px;
+	top: 35px;
+	left: 355px;
+	border-style: dashed;
+	border-color: red;
+	display: block;
+}
+#upload-content {
+	width: inherit;
+	height: inherit;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+#ingredients {
+	margin-top: 15px;
+}
+input[name=url] {
+	width:80%;
+	margin: 30px;
+	padding-left: 10px;
+}
+button {
+	border-style:solid;
+	border-color: red;
+	padding: 15px;
+	font-size:16px;
+	margin: 10px 0 15px 0;
+	text-align: center;
+	display: inline-block;
+	background-color:#FFFFFF;
+	width:90%;
+}
+#add-more-ingredients {
+	width: 35%;
+}
