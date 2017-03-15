@@ -35,12 +35,7 @@ ul {
 	align-self: center;
 	margin-left: -5%;
 }
-#ingredients {
-	text-align:center;
-	margin: 15px;
-	width: 90%;
-}
-#steps {
+div {
 	width:90%;
 	margin: 15px;
 }
