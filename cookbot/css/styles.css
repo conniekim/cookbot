@@ -60,13 +60,13 @@ input[name=step] {
 }*/
 button, .button {
     border-style: solid;
-    border-color: #30c9e8;
+    border-color: #ff4431;
     padding: 15px;
     font-size: 16px;
     margin: 10px 0 15px 0;
     text-align: center;
     display: inline-block;
-    background-color: #FFFFFF;
+    background-color: #ff4431;
     width: 25%;
 }
 

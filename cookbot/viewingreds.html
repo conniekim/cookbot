@@ -5,11 +5,77 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="ingredients/style.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<title> Ingredients List </title>
 	</head>
-<body>
-<header> Ingredients </header>
-<div id="list"></div>
+<body class="home">
+	<div class="container">
+			<div class="row">
+		  	
+			  	<div class="col-lg-6" style="
+	    		display: inline;
+	    		width: 25%;
+	   			margin-left: 70%;
+				">
+				<img id="back-icon" src="img/back.png" style="
+			    position: absolute;
+			    margin-top: 5px;
+			    margin-left: -900px;
+			    display: inline;
+			    width: 50px;
+			    /* margin-top: 13px; */
+				"><form class="search-form" style="
+			    /* margin-top: -10px; */
+			    /* width: 0px; */
+			    display: inline;
+			    margin-left: -40px;
+			    /* color: #3b4a4d; */
+				">
+				<input type="text" placeholder="Search for recipe" style="
+			    /* margin-top: 100px; */
+			    /* align-items: baseline; */
+			    margin-right: 30px;
+				">
+				<button></button>
+				</form>
+				<img id="settings-icon" src="img/settings copy.png" style="
+	    		/* width: 0%; */
+/*	    		width: 120px;*/
+	    		position: absolute;
+	    		/* margin-left: 770px; */
+	    		margin-top: 7px;
+	    		margin-left: -20px;
+	    		/* left: 1275px; */
+				">	
+				</div>
+			</div>
+		<div class="row">
+		  	<div class="col-lg-12 header">
+		  		
+		  		<div class="col-lg-5">
+			  		<div class="header-text">
+			  			<h1><a href="../cookbot/index.html" class="link" style="
+    					text-decoration: none;
+						"> CookBot </a> <img src="img/round-robot.png"></h1>
+					  	<!-- <p>Learning your recipes, one by one</p> -->
+				  	</div>
+			  	</div>
+		  	</div>
+		</div>
+		<div class="line" style="
+	    border-top: 5px solid;
+	    border-color: #f5f5f5;
+	    margin-top: 10px;
+	    margin-bottom: 10px;
+		"> </div>
+		<div class="decoration">
+			<div class="d"> --------------- </div>
+			<header> Ingredients </header>
+			<div class="d"> --------------- </div>
+		</div>
+<!-- 		<header> Ingredients </header> -->
+		<div id="list"></div>
+	</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="ingredients/script.js"></script>
 </body>
