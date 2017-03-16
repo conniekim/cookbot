@@ -1,73 +1,179 @@
 body {
-	margin: 35px;
-	padding: 40px 60px 40px;
-	font-family: Helvetica,Arial,sans-serif;
-	width:50%;
- 	margin:0 auto;
- 	font-size:20px;
+    margin: 35px;
+    padding: 40px 60px 40px;
+    font-family: 'Lato', sans-serif;
+    /*  width:50%;*/
+    margin: 0 auto;
+    font-size: 20px;
+/*    background-color: #acadaf;*/
+    color: #3b4a4d;
 }
+
 header {
-	font-size: 36px;
-	text-align: center;
-	margin-left: -7%;
+    margin-top: 80px;
+    font-size: 36px;
+    text-align: center;
+    /*  margin-left: -7%;*/
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: #3b4a4d;
+    letter-spacing: 8px;
 }
+
 ul {
-	list-style-type:none;
-	padding:0;
-	margin: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
+
 input[type=text] {
-	padding: 6px 10px;
+    padding: 6px 10px;
     margin: 8px 0;
     box-sizing: border-box;
     font-size: 14px;
     width: 35%;
     text-align: left;
 }
+
 input[name=step] {
-	width: 90%;
+    width: 90%;
 }
+
+.home {
+    background-color: #f7f8fa;
+}
+
+.container {
+    background-color: #fcfcfd;
+    border-radius: 25px;
+}
+
+.add {
+    /*  display: inline-block;*/
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    /*  margin-left: -7%;*/
+    margin-bottom: 30px;
+    color: #3b4a4d;
+    letter-spacing: 2px;
+}
+
+/*.decoration {
+    display: inline-block;
+}*/
+.decoration .d {
+    margin-top: 30px;
+    border-top: 1px solid;
+    display: inline-block;
+    color: #3b4a4d;
+    opacity: 0.5;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
 #container {
-	margin-bottom: 15px;
-	margin-top: 30px;
-	position:relative;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    position: relative;
 }
+
 #upload {
-	position:absolute;
-	width: 350px;
-	height: 365px;
-	top: 35px;
-	left: 355px;
-	border-style: dashed;
-	border-color: red;
-	display: block;
+    margin-left: 36%;
+    /*  position:absolute;*/
+    width: 350px;
+    height: 365px;
+    top: 35px;
+    left: 355px;
+    align-self: center;
+    border-style: dashed;
+    border-color: rgba(59, 74, 77, 0.4);
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
+
 #upload-content {
-	width: inherit;
-	height: inherit;
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
 }
+
+.group {
+    margin-top: 20px;
+}
+
+b {
+    margin-left: 5px;
+    letter-spacing: 2px;
+}
+
 #ingredients {
-	margin-top: 15px;
+    /* margin-top: -10%; */
+    /* margin-top: 15px; */
+    border-style: solid;
+    display: inline-table;
+    border-color: rgba(59,74,77, 0.4);
+    padding: 5px;
+    margin-right: 20px;
+    margin-left: 7%;
 }
+
+#ingredients ul {
+    text-align: justify;
+    /* color: black; */
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 18px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    /* top: 10px; */
+}
+
+#steps {
+    position: absolute;
+    width: 50%;
+    /* margin-top: 10px; */
+    border-style: solid;
+    display: inline-block;
+    border-color: rgba(59,74,77, 0.4);
+    padding: 5px;
+    margin-left: 40px;
+}
+
+#steps ul {
+    text-align: justify;
+    /* color: black; */
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 18px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    /* top: 10px; */
+}
+
 input[name=url] {
-	width:80%;
-	margin: 30px;
-	padding-left: 10px;
+    width: 80%;
+    margin: 30px;
+    padding-left: 10px;
 }
+
 button {
-	border-style:solid;
-	border-color: red;
-	padding: 15px;
-	font-size:16px;
-	margin: 10px 0 15px 0;
-	text-align: center;
-	display: inline-block;
-	background-color:#FFFFFF;
-	width:90%;
+    border-style: solid;
+    border-color: #30c9e8;
+    padding: 15px;
+    font-size: 16px;
+    margin: 10px 0 15px 0;
+    text-align: center;
+    display: inline-block;
+    background-color: #FFFFFF;
+    width: 90%;
 }
+
 #add-more-ingredients {
-	width: 35%;
+    width: 35%;
 }
