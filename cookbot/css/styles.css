@@ -1,4 +1,4 @@
-body {
+body { 
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'Lato', sans-serif;
     background-color: #fcfcfd;
@@ -60,6 +60,18 @@ input[name=step] {
 	border-color: red;
 }*/
 button, .button {
+    border-style: solid;
+    border-color: #ff4431;
+    padding: 15px;
+    font-size: 16px;
+    margin: 10px 0 15px 0;
+    text-align: center;
+    display: inline-block;
+    background-color: #ff4431;
+    width: 25%;
+}
+
+.back-btn a {
     border-style: solid;
     border-color: #ff4431;
     padding: 15px;

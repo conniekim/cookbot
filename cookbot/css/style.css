@@ -1,7 +1,7 @@
 body {
 	font-family: 'Roboto', sans-serif;
-}
-
+} 
+ 
 body.add-recipe {
 	margin: 35px;
 	padding: 40px 60px 40px;
@@ -64,44 +64,85 @@ button, .button {
 }
 
 /* Home Page CSS */
-.header-text img, #settings-icon, #add-icon {
-	height: 1.8em;
+.header-text img, #add-icon {
+	height: 1.2em;
+}
+
+.home {
+	background-color: #f7f8fa;
+	font-family: Roboto, sans-serif;
 }
 
 .home h1 {
-	font-size: 3.2vw;
-    letter-spacing: 4.4px;
-    font-weight: 500;
+	font-size: 4em;
+    letter-spacing: 0px;
+    font-weight: 700;
     text-transform: uppercase;
-    color: #eee;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.home .container {
+	background-color: #fcfcfd;
+    box-shadow: 0 0 5px 5px rgba(200,200,200,.05);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 0 50px;
 }
 
 .home .header {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #ca5848 100%), url("../img/cake-bg.jpg");
+    background: url("../img/bg.png");
     background-size: 100%;
-    background-position: 0px;
+    background-position: 0px -40px;
+    height: 500px;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;
+    justify-content: center;
+    -webkit-justify-content: center; 
+    -webkit-align-items: center;
+    align-items: center;
 }
 
 .home .header-text {
-	/*color: #ab4f4f;*/
-	text-align: left;
-	color: #4d4d4d;
+	text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+	/*color: #ff4431;*/
 }
 
-.home .search-text {
+.home .header-text a {
+	color: #ff4431
+}
+
+.header-text a:hover {
+	color: #555555;
+	cursor: pointer;
+}
+
+.home .header .col-lg-6 {
+	width: 65%;
+}
+
+.home .search-form {
 	position: relative;
 }
 
 .home .search-form input {
 	width: 100%;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	margin: 20px 0px;
+    font-size: 26px;
+    background-color: rgba(255,255,255,0.75);
+    border: none;
 }
 
 .home .search-form button {
 	position: absolute;
-    right: 27px;
-    top: 23px;
+    right: 21px;
+    top: 30px;
     background: url("../img/search.svg");
     background-repeat: no-repeat;
     z-index: 2;
@@ -135,31 +176,30 @@ button, .button {
 	padding: 20px;
 }
 
-.home .recipe-title {
-	margin-bottom: 1vw;
-    font-size: 30px;
-    font-weight: 500;
-}
-
-.home .recipe-box {
-	margin-top: 20px;
-	padding: 20px 0;
-    border: 1px solid black;
-    height: 192px;
-}
-
-.home .recipe-button {
-	display: inline-block;
-}
-
-.home #view-recipe-button {
+.home .section-header {
+	margin-bottom: 10px;
 	margin-top: 10px;
 }
 
+.home .section-header h1 {
+	display: inline-block;
+	color: #555;
+
+}
+
+
+
+.home h1#add-btn {
+	float: right;
+}
+
 .home .add-btn {
-    font-size: 4em;
+    font-size: 0.6em;
     text-transform: uppercase;
-    letter-spacing: 8px;
+    color: #ff4431;
+}
+
+a.add-btn:hover {
     color: #555;
 }
 
@@ -167,10 +207,30 @@ button, .button {
 	vertical-align: middle;
 }
 
-.home #add-icon {
+.home .recipe-title {
+	margin-bottom: 1vw;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.home .recipe-box {
+	padding: 20px 0;
+    border-top: 1px solid #eee;
+    height: 192px;
+}
+
+.home .recipe-button {
 	display: inline-block;
-	height: 1.5em;
-	margin-right: 20px;
+}
+
+.home .recipe-button input {
+	border: none;
+    background-color: transparent;
+    font-size: 1.1em;
+}
+
+.home #view-recipe-button {
+	margin-top: 10px;
 }
 
 .home #add-recipe-box {
@@ -188,9 +248,28 @@ a:hover {
 	color: #fff;
 }
 
-.recipe-box-image {
+.home .recipe-text img {
+	height: 40px;
+}
+
+.home .recipe-img {
 	height: 150px;
-	width: 200px;
-/*    position: absolute;
-    clip: rect(0px,200px,150px,0px);*/
+	overflow: hidden;
+}
+
+.recipe-box-image {
+	width: 100%;
+}
+
+/* Title */
+.header-text h1 {
+	display: inline-block;
+}
+
+#settings-icon {
+	height: 2.5em;
+    position: relative;
+    top: 50%;
+    transform: translateY(100%);
+    float: right;
 }

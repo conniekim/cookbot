@@ -1,162 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="add_recipes/style.css">
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<title> Add Recipe </title>
+    
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!--         <link rel="stylesheet" href="css/style.css">
+ -->    	<link rel="stylesheet" href="css/addrecipe.css">
+ 		<link href="https://fonts.googleapis.com/css?family=Raleway:500,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    
+	  <title> Add Recipe </title>
 	</head>
-<body class="home">
-	<div class="container">
+  <body class="home">
+  	<div class="container">
 		<div class="row">
-		  	
-		  	<div class="col-lg-6" style="
-    		display: inline;
-    		width: 25%;
-   			margin-left: 70%;
-			">
-			<img id="back-icon" src="img/back.png" style="
-		    position: absolute;
-		    margin-top: 5px;
-		    margin-left: -850px;
-		    display: inline;
-		    width: 50px;
-		    /* margin-top: 13px; */
-		 "><form class="search-form" style="
-		    /* margin-top: -10px; */
-		    /* width: 0px; */
-		    display: inline;
-		    margin-left: -0px;
-		    /* color: #3b4a4d; */
-		 ">
-			<input type="text" placeholder="Search for recipe" style="
-		    /* margin-top: 100px; */
-		    /* align-items: baseline; */
-		    margin-right: 30px;
-			">
-			<button style="
-    /* margin-left: 100px; */
-    right: 9.5%;
-"></button>
-			</form>
-			<img id="settings-icon" src="img/settings copy.png" style="
-    		/* width: 0%; */
-/*    		width: 100pxpx;*/
-    		position: absolute;
-    		/* margin-left: 770px; */
-    		margin-top: 7px;
-    		margin-left: -20px;
-    		/* left: 1275px; */
-   ">	
-		</div>
-	</div>
-
-		<div class="row">
-		  	<div class="col-lg-12 header">
-		  		
-		  		<div class="col-lg-5">
-			  		<div class="header-text">
-			  			<h1><a href="../cookbot/index.html" class="link" style="
-    					text-decoration: none;
-						"> CookBot </a> <img src="img/round-robot_copy.png"></h1>
-					  	<!-- <p>Learning your recipes, one by one</p> -->
-				  	</div>
-			  	</div>
+		  	<div class="col-lg-12">
+		  		<div class="header-text">
+		  			<h1><a href="index.html">CookBot<img src="img/round-robot.svg"></a></h1>
+					<img id="settings-icon" src="img/settings.svg">
+				</div>
 		  	</div>
-		</div>
-		<div class="line" style="
-	    border-top: 5px solid;
-	    border-color: #f5f5f5;
-	    margin-top: 10px;
-	    margin-bottom: 10px;
-		"> </div>
+		  	<div class="col-lg-12 header">
+		  		<h1 id="add-recipe-title">Add recipe</h1>
+		  	</div>
+		  </div>
 
-	<header> Add a recipe </header>
-	<div id="container">
-		<div class="add">
-			<div class="decoration">
-			<div class="d"> --------------- </div>
-			<form style="
-						    display: inline-block;
-						    font-size: 20px;
-						">
-				Title (required) <br>
-				<input type="text" name="title" id="title-input" placeholder="Can use up to 3 words" style="
-				    width: 100%;
-				"><br>
-				</form>
-			<div class="d"> --------------- </div>
-			</div>
-
-		</div>
-		<div id="upload"> 
-			<div id="upload-content">
-			<ul> Upload photo </ul>
-			<ul> or </ul>
-			<ul> provide URL </ul>
-			<ul> <input type="text" name="url" id="url-input"> </ul> 
+		<div id="title" class="col-xs-12"> 
+			<div id="title-content-container" class="col-xs-6 col-center">
+				<div id="title-content">
+					<h1>Title (required)</h1>
+				  	<input type="text" name="title" id="title-input" placeholder="Can use up to 3 words">
+				</div>
 			</div>
 		</div>
-	<div class="group" style="margin-right: auto; margin-left: auto;">
-		<div id="ingredients">
-			<form>
-				<b>Ingredients (one item per line) <b> <br>
-				<ul><input type="text" name="ingredient" style="
-    width: 100%;
-"></ul>
-				<ul><input type="text" name="ingredient" style="
-    width: 100%;
-"></ul>
-				<ul style="
-"><input type="text" name="ingredient" style="
-    width: 100%;
-"></ul>
-				<ul><input type="text" name="ingredient" style="
-    width: 100%;
-"></ul>
-				<ul><input type="text" name="ingredient" style="
-    width: 100%;
-"></ul>
-					
-			<button id="add-more-ingredients" style="
-    width: 100%;
-"><b>+</b> Add more ingredients</button>
-		</b></b></form></div><div id="steps">
-			<form style="margin-bottom: -5%;">
-				<b>Steps (one step per line) <b><br>
-				<ul><input type="text" name="step"></ul>
-				<ul><input type="text" name="step"></ul>
-				<ul><input type="text" name="step"></ul>
-				<ul><input type="text" name="step"></ul>
-				<ul><input type="text" name="step"></ul>
-					
-			<ul><button id="add-more-steps" style="
-    width: 100%;
-"><b>+</b> Add more steps</button></ul>
-		</b></b></form></div></div></div><b><b>
-	<ul><button id="save" style="
-    margin-left: 36%;
-">Save</button></ul>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="script.js"></script>
+		<div id="upload" class="col-xs-12"> 
+			<div id="upload-content-container" class="col-xs-6 col-center">
+				<div id="upload-content">
+				  <div id="upload-content-text">
+					      Upload photo <br>
+					      or <br>
+					      provide URL <br>
+				  </div>
+				  <input type="text" name="url" id="url-input">
+				</div>
+				</div>
+		</div>
+    
+	  	<div id="ingredients" class="col-xs-12 col-md-4">
+	      <div class="col-xs-12 input-header">
+				  Ingredients (one per line)
+	      </div>
+			  <form class="col-xs-12 ingredients-form">
+	        <div class="col-xs-12">
+				    <input type="text" name="ingredient" class="col-xs-12">
+	        </div>
+	        <div class="col-xs-12">
+				    <input type="text" name="ingredient" class="col-xs-12">
+	        </div>
+	        <div class="col-xs-12">
+				    <input type="text" name="ingredient" class="col-xs-12">
+	        </div>
+	        <div class="col-xs-12">
+				    <input type="text" name="ingredient" class="col-xs-12">
+	        </div>
+	        <div class="col-xs-12">
+				    <input type="text" name="ingredient" class="col-xs-12">
+	        </div>
+			  </form>
+			<div class="col-xs-12">
+			    <button id="add-more-ingredients" class="col-xs-12">
+			  		<b>&#43;</b> Add More
+				</button>
+			</div>
+	    </div>
+    
+	    <div id="steps" class="col-xs-12 col-md-8">
+	      <!-- steps header -->
+	      <div class="col-xs-12 input-header">
+			    Steps (one per line)
+	      </div>
+			  <form class="col-xs-12 steps-form">
+	        <div class="col-xs-12">
+				    <input type="text" name="step" class="col-xs-12">
+	        </div>
+	        <div class="col-xs-12">
+				    <input type="text" name="step" class="col-xs-12">
+	        </div>
+	        <div class="col-xs-12">
+				    <input type="text" name="step" class="col-xs-12">
+	        </div>
+	        <div class="col-xs-12">
+				    <input type="text" name="step" class="col-xs-12">
+	        </div>
+	        <div class="col-xs-12">
+				    <input type="text" name="step" class="col-xs-12">
+	        </div>
+	      </form>
 
-
-
-</b></b></div>
-
-
-
-
-
-
-
-
-
-
-
-</body>
+	      <div class="col-xs-12">
+	        <button id="add-more-steps" class="col-xs-12">
+	          <b>&#43;</b> Add More
+	        </button>
+	      </div>
+	    </div>    
+	    <div class="col-xs-12 buttons">
+	    	<button id="save" class="col-xs-6 col-md-4 col-center">Save</button>
+	    	<button id="back" class="col-xs-6 col-md-4 col-center"><a href="index.html">Cancel</a></button>
+	    </div>
+	    
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="add_recipes/script.js"></script>
+    </div>
+  </body>
 </html>
 
