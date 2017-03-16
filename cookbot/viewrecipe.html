@@ -5,19 +5,103 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="recipe/style.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<title> Recipe Page </title>
 	</head>
-<body>
-	<header> Title </header>
-	<div id="ingredients-display">
-		<b>Ingredients</b>
+<body class="home">
+	<div class="container"> 
+		<div class="row">
+		  	
+		  	<div class="col-lg-6" style="
+    		display: inline;
+    		width: 25%;
+   			margin-left: 70%;
+			">
+			<img id="back-icon" src="img/back.png" style="
+		    position: absolute;
+		    margin-left: -900px;
+		    display: inline;
+		    width: 50px;
+		    /* margin-top: 13px; */
+			"><form class="search-form" style="
+		    /* margin-top: -10px; */
+		    /* width: 0px; */
+		    display: inline;
+		    margin-left: -40px;
+		    /* color: #3b4a4d; */
+			">
+			<input type="text" placeholder="Search for recipe" style="
+		    /* margin-top: 100px; */
+		    /* align-items: baseline; */
+		    margin-right: 30px;
+			">
+			<button></button>
+			</form>
+			<img id="settings-icon" src="img/settings copy.png" style="
+    		/* width: 0%; */
+    		width: 120px;
+    		position: absolute;
+    		/* margin-left: 770px; */
+    		margin-top: 7px;
+    		margin-left: -60px;
+    		/* left: 1275px; */
+			">	
+		</div>
+
+		<div class="row">
+		  	<div class="col-lg-12 header">
+		  		
+		  		<div class="col-lg-5">
+			  		<div class="header-text">
+			  			<h1><a href="../cookbot/index.html" class="link" style="
+    					text-decoration: none;
+						"> CookBot </a> <img src="img/round-robot.png"></h1>
+					  	<!-- <p>Learning your recipes, one by one</p> -->
+				  	</div>
+			  	</div>
+		  	</div>
+		</div>
+		<div class="line" style="
+	    border-top: 1px solid;
+	    border-color: #3b4a4d;
+	    opacity: 0.5;
+	    margin-top: 10px;
+	    margin-bottom: 10px;
+		"> </div>
+			
+
+		<div class="decoration">
+			<div class="d"> --------------- </div>
+			<header>undefined</header>
+			<div class="d"> --------------- </div>
+		</div>
+
+		<div id="upload-display"></div>
+
+		<div class="group">
+
+			<div id="ingredients-display">
+				<div class="margin">
+					<b>Ingredients</b>
+				</div>
+			</div>
+
+			<div id="steps-display">
+				<div class="margin">
+					<b> Directions </b> 
+				</div>
+			</div>
+
+		</div>
+
 	</div>
-	<div id="steps-display">
-		<b> Directions </b> 
-	</div>
-	<div id="upload-display"></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="recipe/script.js"></script>
+
+
+
 </body>
 </html>
 

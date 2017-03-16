@@ -1,0 +1,229 @@
+body {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Lato', sans-serif;
+    background-color: #fcfcfd;
+    color: #3b4a4d;
+}
+
+body.add-recipe {
+    margin: 35px;
+    padding: 40px 60px 40px;
+    font-family: 'Lato', sans-serif;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+header {
+    font-size: 36px;
+    text-align: center;
+    /* margin-left: -7%; */
+    margin-left: 0%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+input[type=text] {
+    padding: 6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 35%;
+    text-align: left;
+}
+
+input[name=step] {
+    width: 100%;
+}
+
+#container {
+    margin-bottom: 15px;
+    margin-top: 30px;
+    position: relative;
+}
+
+/*#upload {
+	position:absolute;
+	width: 350px;
+	height: 365px;
+	top: 25px;
+	left: 355px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-style: dashed;
+	border-color: red;
+}*/
+button, .button {
+    border-style: solid;
+    border-color: #30c9e8;
+    padding: 15px;
+    font-size: 16px;
+    margin: 10px 0 15px 0;
+    text-align: center;
+    display: inline-block;
+    background-color: #FFFFFF;
+    width: 25%;
+}
+
+#add-more-ingredients {
+    width: 35%;
+}
+
+/* Home Page CSS */
+.header-text img, #settings-icon, #add-icon {
+    height: 1.8em;
+}
+
+.home h1 {
+    font-size: 3.2vw;
+    letter-spacing: 4.4px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ff4431;
+    margin-top: 8%;
+}
+
+.home .header {
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #ca5848 100%), url("../img/cake-bg.jpg"); */
+    background-size: 100%;
+    background-position: 0px;
+}
+
+.home .header-text {
+    /*color: #ab4f4f;*/
+    text-align: center;
+    color: #ff4431;
+    font-family: 'Pacifico', cursive;
+}
+
+.home .header-text a {
+    /*color: #ab4f4f;*/
+    text-align: center;
+    color: #ff4431;
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.home .header-text a:hover {
+    /*color: #ab4f4f;*/
+    text-align: center;
+    color: #ff4431;
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.home .search-text {
+    position: relative;
+}
+
+.home .search-form input {
+    width: 25%;
+    text-transform: uppercase;
+    /* margin: 0px 0px; */
+}
+
+.home .search-form button {
+    position: absolute;
+    right: 10%;
+    /* top: 50px; */
+    background-color: #30c9e8;
+    -webkit-mask-image: url("../img/search.svg");
+    /* background: url("../img/search.svg"); */
+    background-repeat: no-repeat;
+    z-index: 2;
+    border: none;
+    width: 0%;
+    opacity: 0.7;
+}
+
+.home .btn {
+    -webkit-border-radius: 12;
+    -moz-border-radius: 12;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 20px;
+    background: #ca5848;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 80%;
+    letter-spacing: 10px;
+}
+
+.home .btn:hover {
+    background: #8c4a4a;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.home .add-recipe {
+    text-align: center;
+    padding: 20px;
+}
+
+.home .recipe-title {
+    margin-bottom: 1vw;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.home .recipe-box {
+    margin-top: 20px;
+    padding: 20px 0;
+    border: 1px solid black;
+    height: 192px;
+}
+
+.home .recipe-button {
+    display: inline-block;
+}
+
+.home #view-recipe-button {
+    margin-top: 10px;
+}
+
+.home .add-btn {
+    font-size: 4em;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    color: #555;
+}
+
+.home .add-btn span {
+    vertical-align: middle;
+}
+
+.home #add-icon {
+    display: inline-block;
+    height: 1.5em;
+    margin-right: 20px;
+}
+
+.home #add-recipe-box {
+    text-align: center;
+}
+
+.home #add-recipe-box div {
+    position: absolute;
+    top: 50%;
+    transform: translate(20%,-50%);
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: #fff;
+}
+
+.recipe-box-image {
+    height: 150px;
+    width: 200px;
+    /*    position: absolute;
+    clip: rect(0px,200px,150px,0px);*/
+}

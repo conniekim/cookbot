@@ -5,15 +5,92 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="add_recipes/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<title> Add Recipe </title>
 	</head>
-<body>
+<body class="home">
+	<div class="container">
+		<div class="row">
+		  	
+		  	<div class="col-lg-6" style="
+    		display: inline;
+    		width: 25%;
+   			margin-left: 70%;
+			">
+			<img id="back-icon" src="img/back.png" style="
+		    position: absolute;
+		    margin-left: -850px;
+		    display: inline;
+		    width: 50px;
+		    /* margin-top: 13px; */
+		 "><form class="search-form" style="
+		    /* margin-top: -10px; */
+		    /* width: 0px; */
+		    display: inline;
+		    margin-left: -0px;
+		    /* color: #3b4a4d; */
+		 ">
+			<input type="text" placeholder="Search for recipe" style="
+		    /* margin-top: 100px; */
+		    /* align-items: baseline; */
+		    margin-right: 30px;
+			">
+			<button style="
+    /* margin-left: 100px; */
+    right: 9.5%;
+"></button>
+			</form>
+			<img id="settings-icon" src="img/settings copy.png" style="
+    		/* width: 0%; */
+    		width: 100pxpx;
+    		position: absolute;
+    		/* margin-left: 770px; */
+    		margin-top: 7px;
+    		margin-left: -20px;
+    		/* left: 1275px; */
+   ">	
+		</div>
+	</div>
+
+		<div class="row">
+		  	<div class="col-lg-12 header">
+		  		
+		  		<div class="col-lg-5">
+			  		<div class="header-text">
+			  			<h1><a href="../cookbot/index.html" class="link" style="
+    					text-decoration: none;
+						"> CookBot </a> <img src="img/round-robot.png"></h1>
+					  	<!-- <p>Learning your recipes, one by one</p> -->
+				  	</div>
+			  	</div>
+		  	</div>
+		</div>
+		<div class="line" style="
+	    border-top: 5px solid;
+	    border-color: #f5f5f5;
+	    margin-top: 10px;
+	    margin-bottom: 10px;
+		"> </div>
+
 	<header> Add a recipe </header>
 	<div id="container">
-		<form>
-			Title (required) <br>
-			<input type="text" name="title" id="title-input" placeholder="Can use up to 3 words"><br>
-		</form>
+		<div class="add">
+			<div class="decoration">
+			<div class="d"> --------------- </div>
+			<form style="
+						    display: inline-block;
+						    font-size: 20px;
+						">
+				Title (required) <br>
+				<input type="text" name="title" id="title-input" placeholder="Can use up to 3 words" style="
+				    width: 100%;
+				"><br>
+				</form>
+			<div class="d"> --------------- </div>
+			</div>
+
+		</div>
 		<div id="upload"> 
 			<div id="upload-content">
 			<ul> Upload photo </ul>
@@ -22,30 +99,63 @@
 			<ul> <input type="text" name="url" id="url-input"> </ul> 
 			</div>
 		</div>
-	<div id="ingredients">
-		<form>
-			Ingredients (one item per line) <br>
-			<ul><input type="text" name="ingredient"></ul>
-			<ul><input type="text" name="ingredient"></ul>
-			<ul><input type="text" name="ingredient"></ul>
-			<ul><input type="text" name="ingredient"></ul>
-			<ul><input type="text" name="ingredient"></ul>
-		</form>
-	</div>
-	<button id="add-more-ingredients"><b>+</b> Add more ingredients</button>
-	</div>
-	<div id="steps">
-		<form>
-			Steps (one step per line) <br>
-			<ul><input type="text" name="step"></ul>
-			<ul><input type="text" name="step"></ul>
-			<ul><input type="text" name="step"></ul>
-		</form>
-	</div>
-	<ul><button id="add-more-steps"><b>+</b> Add more steps</button></ul>
-	<ul><button id="save">Save</button></ul>
+	<div class="group">
+		<div id="ingredients">
+			<form>
+				<b>Ingredients (one item per line) <b> <br>
+				<ul><input type="text" name="ingredient" style="
+    width: 100%;
+"></ul>
+				<ul><input type="text" name="ingredient" style="
+    width: 100%;
+"></ul>
+				<ul style="
+"><input type="text" name="ingredient" style="
+    width: 100%;
+"></ul>
+				<ul><input type="text" name="ingredient" style="
+    width: 100%;
+"></ul>
+				<ul><input type="text" name="ingredient" style="
+    width: 100%;
+"></ul>
+					
+			<button id="add-more-ingredients" style="
+    width: 100%;
+"><b>+</b> Add more ingredients</button>
+		</b></b></form></div><div id="steps">
+			<form style="margin-bottom: -5%;">
+				<b>Steps (one step per line) <b><br>
+				<ul><input type="text" name="step"></ul>
+				<ul><input type="text" name="step"></ul>
+				<ul><input type="text" name="step"></ul>
+				<ul><input type="text" name="step"></ul>
+				<ul><input type="text" name="step"></ul>
+					
+			<ul><button id="add-more-steps" style="
+    width: 100%;
+"><b>+</b> Add more steps</button></ul>
+		</b></b></form></div></div></div><b><b>
+	<ul><button id="save" style="
+    margin-left: 36%;
+">Save</button></ul>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="script.js"></script>
+
+
+
+</b></b></div>
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
 
