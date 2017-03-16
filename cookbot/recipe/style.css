@@ -49,6 +49,15 @@ div {
 	/* margin: 15px; */
 }
 
+.home {
+    background-color: #f7f8fa;
+}
+
+.container {
+    background-color: #fcfcfd;
+    border-radius: 25px;
+}
+
 #upload-display {
 	margin-top: 50px;
 	margin-bottom: 50px;
