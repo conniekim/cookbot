@@ -1,0 +1,166 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
+input {
+  width: 100%;
+  padding: 6px 10px;
+}
+
+a {
+  color: #333;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.col-center {
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  background-color: #ff4431;
+  text-color: #3b4a4d;
+  border-style: none;
+  padding: 15px;
+  font-size: 17px;
+  margin: 10px 0 15px 0;
+  text-align: center;
+  display: inline-block;  
+}
+
+.buttons a {
+  display: inline-block;
+}
+
+#ingredients, #steps {
+  padding: 15px;
+  border-color: rgba(59,74,77, 0.4);
+}
+
+#ingredients > form > div,
+#steps > form > div {
+  padding: 10px 0px;
+}
+
+
+#upload, #title-box {
+  text-align: center;
+  position: relative;
+  min-height: 60vh;
+  margin-bottom: 20px;
+}
+
+#title-content-container {
+  height: 33vh;
+  margin-top: 30px;
+}
+
+#title-content-container h1 {
+  font-size: 2em;
+  font-family: Roboto, sans-serif;
+  text-transform: none;
+}
+
+#upload-content-container {
+  border-style: dashed;
+  border-color: rgba(59, 74, 77, 0.4);
+  min-height: 60vh;
+}
+
+#upload-content, #title-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+}
+
+#upload-content-text {
+  padding: 10px 10px;
+}
+
+.input-header {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* Home and container CSS */
+.home {
+  background-color: #f7f8fa;
+  font-family: Roboto, sans-serif;
+}
+
+.home h1 {
+    font-size: 4em;
+    letter-spacing: 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.home .container {
+    background-color: #fcfcfd;
+    box-shadow: 0 0 5px 5px rgba(200,200,200,.05);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 0 50px;
+}
+
+.home .header {
+    background: url("../img/bg.png");
+    background-size: 100%;
+    background-position: 0px -180px;
+    height: 200px;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;
+    justify-content: center;
+    -webkit-justify-content: center; 
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.home .header-text {
+    /*text-align: center;*/
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    color: #ff4431;
+}
+
+.home .header .col-lg-6 {
+  width: 65%;
+}
+
+.header-text img, #add-icon {
+  height: 1.2em;
+}
+
+.home .header-text a {
+  color: #ff4431
+}
+
+.header-text a:hover {
+  color: #555555;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Title */
+.header-text h1 {
+  display: inline-block;
+}
+
+#settings-icon {
+  height: 2.5em;
+    position: relative;
+    top: 50%;
+    transform: translateY(100%);
+    float: right;
+}
