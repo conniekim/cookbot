@@ -1,17 +1,18 @@
 body {
 	margin: 35px;
 	padding: 40px 60px 40px;
-		margin:0 auto;
+	margin:0 auto;
 	font-family: Helvetica,Arial,sans-serif;
  	font-size:20px;
  	text-align: center;
 }
 #list {
 	font-size:16px;
+	padding-bottom: 20px;
 }
 header {
 	margin-top: 80px;
-	font-size: 36px;
+	font-size: 3.4vw;
 /*	margin-left: -5%;*/
 	text-transform: uppercase;
 	margin-bottom:30px;
@@ -19,9 +20,11 @@ header {
 	letter-spacing: 8px;
 	font-weight: 700;
 }
-ul {
+#list ul {
 	list-style-type:none;
+	margin: 10px;
 	padding: 0;
+	letter-spacing: 1px;
 /*	margin: 10px;*/
 }
 
