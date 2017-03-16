@@ -1,6 +1,6 @@
 body {
 	font-family: 'Roboto', sans-serif;
-}
+} 
 
 body.add-recipe {
 	margin: 35px;
@@ -69,23 +69,33 @@ button, .button {
 }
 
 .home h1 {
-	font-size: 3.2vw;
-    letter-spacing: 4.4px;
-    font-weight: 500;
+	/*font-size: 3.2vw; */
+	font-size: 4em;
+    letter-spacing: 1px;
+    font-weight: 700;
     text-transform: uppercase;
-    color: #eee;
 }
 
 .home .header {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #ca5848 100%), url("../img/cake-bg.jpg");
+    background: url("../img/cake-bg.jpg");
     background-size: 100%;
     background-position: 0px;
+    height: 500px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .home .header-text {
-	/*color: #ab4f4f;*/
-	text-align: left;
-	color: #4d4d4d;
+	text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+	color: #ff4431;
+}
+
+.center-block {
+	float: none !important;
 }
 
 .home .search-text {
