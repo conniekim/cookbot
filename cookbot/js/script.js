@@ -8,15 +8,16 @@ $(document).ready(function() {
 			for (var i = 0; i < items.length; i++) {
 				dict = items[i];
 				var eachRecipe = dict.RecipeName;
+				eachRecipe = toTitleCase(eachRecipe);
 				var recipeImage = dict.URL;
 				var recipeID = eachRecipe.replace(/\s+/g, '_').toLowerCase();
 
 				$('#recipeTable').append(
 					'<div class="col-lg-12 recipe-box"><div class="col-lg-4 recipe-img"><img class="recipe-box-image" src="' + recipeImage + '"></div>' +
 					'<div class="col-lg-8 recipe-text"><div class="recipe-title">' + eachRecipe + '</div>' +
-					'<div class="recipe-buttons"><form class="recipe-button" action="viewingreds.html"><img src="http://placehold.it/40x40">' +
+					'<div class="recipe-buttons"><form class="recipe-button" action="viewingreds.html"><img src="img/ingreds.svg">' +
 					'<input type="hidden" name="varname" value="'+ recipeID +'"/><span><input type="submit" value="View Ingredients"></span></form>' +
-					'<form id="view-recipe-button" class="recipe-button" action="viewrecipe.html"><img src="http://placehold.it/40x40">' +
+					'<form id="view-recipe-button" class="recipe-button" action="viewrecipe.html"><img src="img/recipe.svg">' +
 					'<input type="hidden" name="varname" value="'+ recipeID +'"/><span><input type="submit" value="View Recipe"></span></form>' 
 				); 
 			}	
@@ -48,3 +49,8 @@ $(document).ready(function() {
 
 });
 
+function toTitleCase(str)
+{
+    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}
+/* Taken from http://stackoverflow.com/questions/4878756/javascript-how-to-capitalize-first-letter-of-each-word-like-a-2-word-city */

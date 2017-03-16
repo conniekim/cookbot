@@ -1,82 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head> 
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="ingredients/style.css">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<title> Ingredients List </title>
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!--         <link rel="stylesheet" href="css/style.css">
+ -->    	<link rel="stylesheet" href="css/addrecipe.css">
+ 		<link href="https://fonts.googleapis.com/css?family=Raleway:500,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    
+	  <title> View Ingredients </title>
 	</head>
-<body class="home">
-	<div class="container">
-			<div class="row">
-		  	
-			  	<div class="col-lg-6" style="
-	    		display: inline;
-	    		width: 25%;
-	   			margin-left: 70%;
-				">
-				<img id="back-icon" src="img/back.png" style="
-			    position: absolute;
-			    margin-top: 5px;
-			    margin-left: -900px;
-			    display: inline;
-			    width: 50px;
-			    /* margin-top: 13px; */
-				"><form class="search-form" style="
-			    /* margin-top: -10px; */
-			    /* width: 0px; */
-			    display: inline;
-			    margin-left: -40px;
-			    /* color: #3b4a4d; */
-				">
-				<input type="text" placeholder="Search for recipe" style="
-			    /* margin-top: 100px; */
-			    /* align-items: baseline; */
-			    margin-right: 30px;
-				">
-				<button></button>
-				</form>
-				<img id="settings-icon" src="img/settings copy.png" style="
-	    		/* width: 0%; */
-/*	    		width: 120px;*/
-	    		position: absolute;
-	    		/* margin-left: 770px; */
-	    		margin-top: 7px;
-	    		margin-left: -20px;
-	    		/* left: 1275px; */
-				">	
+  <body class="home">
+  	<div class="container">
+		<div class="row">
+		  	<div class="col-lg-12">
+		  		<div class="header-text">
+		  			<h1><a href="index.html">CookBot<img src="img/round-robot.svg"></a></h1>
+					<img id="settings-icon" src="img/settings.svg">
+				</div>
+		  	</div>
+		  	<div class="col-lg-12 header">
+		  		<h1 id="add-recipe-title">View Ingredients</h1>
+		  	</div>
+		  </div>
+
+		<div id="title" class="col-xs-12"> 
+			<div id="title-content-container" class="col-xs-6 col-center">
+				<div id="title-content">
+					<h1>Title</h1>
+
 				</div>
 			</div>
-		<div class="row">
-		  	<div class="col-lg-12 header">
-		  		
-		  		<div class="col-lg-5">
-			  		<div class="header-text">
-			  			<h1><a href="../cookbot/index.html" class="link" style="
-    					text-decoration: none;
-						"> CookBot </a> <img src="img/round-robot.png"></h1>
-					  	<!-- <p>Learning your recipes, one by one</p> -->
-				  	</div>
-			  	</div>
-		  	</div>
 		</div>
-		<div class="line" style="
-	    border-top: 5px solid;
-	    border-color: #f5f5f5;
-	    margin-top: 10px;
-	    margin-bottom: 10px;
-		"> </div>
-		<div class="decoration">
-			<div class="d"> --------------- </div>
-			<header> Ingredients </header>
-			<div class="d"> --------------- </div>
-		</div>
-<!-- 		<header> Ingredients </header> -->
-		<div id="list"></div>
-	</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="ingredients/script.js"></script>
-</body>
+<!-- 		<div id="upload" class="col-xs-12"> 
+			<div id="upload-content-container" class="col-xs-6 col-center">
+				<div id="upload-content">
+				</div>
+				</div>
+		</div> -->
+    
+	  	<div id="ingredients" class="col-xs-12">
+	      <div class="col-xs-12 col-md-4 col-center input-header">
+	      	<col align="center">
+				  Ingredients
+	      </div>
+			  <form class="col-xs-12 col-md-4 col-center ingredients-form"> <col align="center">
+			  </form>
+	    </div>
+      
+	    <div class="col-xs-12 buttons">
+	    	<!-- <button id="back" class="col-xs-6 col-md-4 col-center"><a href="index.html">Back</a></button> -->
+	    	<form>
+	    		<input class="back-btn" type="button" value="Back" onclick="index.html" />
+	    	</form>
+	    </div>
+	    
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="recipe/script.js"></script>
+    </div>
+  </body>
 </html>
+
