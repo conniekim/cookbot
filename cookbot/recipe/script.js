@@ -1,4 +1,4 @@
-'use strict';
+'use strict'; 
 $(document).ready(function() {
 	var query = decodeURIComponent(window.location.search.split('=')[1]);
 	query = query.replace(/\_/g, " ");

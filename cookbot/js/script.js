@@ -4,7 +4,7 @@ $(document).ready(function() {
 		var json = JSON.parse(JSON.stringify(data));
 		var items = json.Items;
 		var dict;
-		if (items) {
+		if (items) { 
 			for (var i = 0; i < items.length; i++) {
 				dict = items[i];
 				var eachRecipe = dict.RecipeName;
@@ -47,11 +47,21 @@ $(document).ready(function() {
 		}
 	});
 
+	checkSuccess(query); 
 
 });
 
 function toTitleCase(str)
 {
     return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}
+
+function checkSuccess(success_str) {
+	if(success_str === "success") {
+		// alert("success is here");
+		$(".success-box").css("display", "block");
+	} else {
+		$(".success-box").css("display", "none");
+	}
 }
 /* Taken from http://stackoverflow.com/questions/4878756/javascript-how-to-capitalize-first-letter-of-each-word-like-a-2-word-city */

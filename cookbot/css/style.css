@@ -1,7 +1,7 @@
 body {
 	font-family: 'Roboto', sans-serif;
 } 
- 
+  
 body.add-recipe {
 	margin: 35px;
 	padding: 40px 60px 40px;
@@ -100,7 +100,8 @@ button, .button {
     background-size: 100%;
     background-position: 0px -40px;
 	background-repeat: no-repeat;
-    min-height: 500px;
+    min-height: 400px;
+    max-height: 500px;
     display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
     display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
     display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -264,6 +265,17 @@ a:hover {
 	width: 100%;
 }
 
+.success-box {
+	display: none;
+	text-align: center; 
+	margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ff4431;
+    border-radius: 30px;
+    color: #fcfcfd;
+    font-size: 24px;
+}
+
 /* Title */
 .header-text h1 {
 	display: inline-block;
@@ -348,4 +360,8 @@ a:hover {
   float: none;
   margin-left: auto;
   margin-right: auto;
+}
+
+input:focus, button:focus {
+    outline: none;
 }

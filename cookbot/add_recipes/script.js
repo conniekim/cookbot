@@ -5,7 +5,7 @@ $(document).ready(function() {
     	var title = $("input[name='title']").val(); 
     	var imageURL = $("input[name='url']").val(); 
         if(!imageURL) {
-            imageURL = "http://placehold.it/200x150";
+            imageURL = "http://placehold.it/200x192";
         }
 
     	var ingreds = [];
@@ -43,7 +43,8 @@ $(document).ready(function() {
             }
         }), 
         function(data, status){
-    		alert(status);
+    		// alert(status);
+    		window.location = 'index.html?submit=success';
     	})
     });
 

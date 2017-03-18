@@ -221,6 +221,24 @@ button:hover {
   background-color: #FF6757;
 }
 
+
+/* Specific to View Recipe */
+.view-recipe #ingredients, .view-recipe #steps {
+  text-align: left; 
+  font-size: 20px;
+}
+
+.view-recipe #title-content-container {
+  min-height: 10vh;
+  max-height: 30vh;
+  height: inherit;
+}
+
+.view-recipe #title-content-container h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
 @media screen and (max-width: 800px) {
   .home .header {
     background-position: 0px -35px;
@@ -246,5 +264,11 @@ button:hover {
 
   .home input {
     height: 6vh;
+  }
+}
+
+@media screen and (max-width: 990px) { 
+  .view-recipe #ingredients, .view-recipe #steps {
+    text-align: center;
   }
 }
