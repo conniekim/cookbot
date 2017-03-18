@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+	<head> 
 	    <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,7 @@
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <!--         <link rel="stylesheet" href="css/style.css">
- -->    	<link rel="stylesheet" href="css/addrecipe.css">
+ -->    	<link rel="stylesheet" href="css/recipe.css">
  		<link href="https://fonts.googleapis.com/css?family=Raleway:500,900" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
@@ -19,33 +19,33 @@
 	  <title> View Ingredients </title>
 	</head>
   <body class="home">
-  	<div class="container">
+  	<div class="container view-ingreds">
 		<div class="row">
-		  	<div class="col-lg-12">
+		  	<div class="col-xs-12">
 		  		<div class="header-text">
 		  			<h1><a href="index.html">CookBot<img src="img/round-robot.svg"></a></h1>
 					<img id="settings-icon" src="img/settings.svg">
 				</div>
 		  	</div>
-		  	<div class="col-lg-12 header">
+		  	<div class="col-xs-12 header">
 		  		<h1 id="add-recipe-title">View Ingredients</h1>
 		  	</div>
 		  </div>
 
 		<div id="title" class="col-xs-12"> 
-			<div id="title-content-container" class="col-xs-6 col-center">
+			<div id="title-content-container" class="col-xs-12 col-center">
 				<div id="title-content">
 					<h1>Title</h1>
 
 				</div>
 			</div>
 		</div>
-<!-- 		<div id="upload" class="col-xs-12"> 
-			<div id="upload-content-container" class="col-xs-6 col-center">
+		<div id="upload" class="col-xs-12"> 
+			<div id="upload-content-container" class="col-xs-12 col-md-6 col-center">
 				<div id="upload-content">
 				</div>
 				</div>
-		</div> -->
+		</div>
     
 	  	<div id="ingredients" class="col-xs-12">
 	      <div class="col-xs-12 col-md-4 col-center input-header">
@@ -57,10 +57,7 @@
 	    </div>
       
 	    <div class="col-xs-12 buttons">
-	    	<!-- <button id="back" class="col-xs-6 col-md-4 col-center"><a href="index.html">Back</a></button> -->
-	    	<form>
-	    		<input class="back-btn" type="button" value="Back" onclick="index.html" />
-	    	</form>
+	    	<button id="back" class="col-xs-6 col-md-4 col-center"><a href="index.html">Back</a></button>
 	    </div>
 	    
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

@@ -30,6 +30,7 @@ a {
 
 a:hover {
   text-decoration: none;
+  color: #333;
 }
 
 .col-center {
@@ -90,6 +91,7 @@ button {
   border-color: rgba(59, 74, 77, 0.4);
   /*min-height: 60vh;*/
   min-height: 30vh;
+  /*width: 100%;*/
 }
 
 #upload-content, #title-content {
@@ -228,15 +230,37 @@ button:hover {
   font-size: 20px;
 }
 
-.view-recipe #title-content-container {
-  min-height: 10vh;
+.view-ingreds #ingredients {
+  font-size: 20px;
+}
+
+.view-ingreds #upload-content-container {
+  border: none;
+}
+
+.view-recipe .input-header, .view-ingreds .input-header {
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.view-recipe #title-content-container, .view-ingreds #title-content-container {
+  min-height: 15vh;
   max-height: 30vh;
   height: inherit;
 }
 
-.view-recipe #title-content-container h1 {
+.view-recipe #title-content-container h1, .view-ingreds #title-content-container h1 {
   text-transform: uppercase;
   font-size: 3em;
+}
+
+/* End of specifics */
+
+@media screen and (max-width: 480px) {
+  .home .header {
+    max-height: 200px;
+    height: inherit;
+  }
 }
 
 @media screen and (max-width: 800px) {
