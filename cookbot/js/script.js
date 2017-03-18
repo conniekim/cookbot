@@ -13,7 +13,7 @@ $(document).ready(function() {
 				var recipeID = eachRecipe.replace(/\s+/g, '_').toLowerCase();
 
 				$('#recipeTable').append( //fix this formatting pls
-					'<div class="col-xs-12 recipe-box"><div class="col-xs-12 col-sm-4 recipe-img"><img class="recipe-box-image" src="' + recipeImage + '"></div>' +
+					'<div class="col-sm-12 col-md-6 recipe-box"><div class="col-xs-12 col-sm-4 recipe-img"><img class="recipe-box-image" src="' + recipeImage + '"></div>' +
 					'<div class="col-xs-12 col-sm-8 recipe-text"><div class="recipe-title">' + eachRecipe + '</div>' +
 					'<div class="recipe-buttons"><form class="recipe-button" action="viewingreds.html"><img src="img/ingreds.svg">' +
 					'<input type="hidden" name="varname" value="'+ recipeID +'"/><span><input type="submit" value="View Ingredients"></span></form>' +
