@@ -90,20 +90,6 @@ $(document).ready(function() {
 		}
 	});
 
-	$(".recipe-box-image").each(function() {
-		console.log("got in here");
-		var image = new Image();
-		image.src = $(this).attr("src");
-		image.onload = function() {
-			console.log('height: ' + this.height);
-		};
-	 //    if(value) {
-	 //    	ingreds.push(value);
-		// }
-	});
-
-
-
 	var query = decodeURIComponent(window.location.search.split('=')[1]);
 	checkSuccess(query); 
 
