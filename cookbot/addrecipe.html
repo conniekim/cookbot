@@ -16,7 +16,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     
-	  <title> Add Recipe </title>
+	  <title> Add Recipe </title> 
 	</head>
   <body class="home">
   	<div class="container">
@@ -24,7 +24,7 @@
 		  	<div class="col-lg-12">
 		  		<div class="header-text">
 		  			<h1><a href="index.html">CookBot<img src="img/round-robot.svg"></a></h1>
-					<img id="settings-icon" src="img/settings.svg">
+					<img id="settings-icon" src="img/settings.svg"><img id="menu-icon" src="img/menu.svg">
 				</div>
 		  	</div>
 		  	<div class="col-lg-12 header">
@@ -33,33 +33,33 @@
 		  </div>
 
 		<div id="title" class="col-xs-12"> 
-			<div id="title-content-container" class="col-xs-6 col-center">
+			<div id="title-content-container" class="col-xs-12 col-md-6 col-center">
 				<div id="title-content">
 					<h1>Title (required)</h1>
-				  	<input type="text" name="title" id="title-input" placeholder="Can use up to 3 words">
+				  	<input type="text" name="title" id="title-input" placeholder="Max 3 words">
 				</div>
 			</div>
 		</div>
 		<div id="upload" class="col-xs-12"> 
-			<div id="upload-content-container" class="col-xs-6 col-center">
+			<div id="upload-content-container" class="col-xs-12 col-md-6 col-center">
 				<div id="upload-content">
 				  <div id="upload-content-text">
 					      Upload photo <br>
 					      or <br>
 					      provide URL <br>
 				  </div>
-				  <input type="text" name="url" id="url-input">
+				  <input type="text" name="url" id="url-input" placeholder="Paste URL here">
 				</div>
 				</div>
 		</div>
     
 	  	<div id="ingredients" class="col-xs-12 col-md-4">
 	      <div class="col-xs-12 input-header">
-				  Ingredients (one per line)
+				  Ingredients
 	      </div>
 			  <form class="col-xs-12 ingredients-form">
 	        <div class="col-xs-12">
-				    <input type="text" name="ingredient" class="col-xs-12">
+				    <input type="text" name="ingredient" class="col-xs-12" placeholder="e.g. 1 cup of milk">
 	        </div>
 	        <div class="col-xs-12">
 				    <input type="text" name="ingredient" class="col-xs-12">
@@ -84,11 +84,11 @@
 	    <div id="steps" class="col-xs-12 col-md-8">
 	      <!-- steps header -->
 	      <div class="col-xs-12 input-header">
-			    Steps (one per line)
+			    Steps
 	      </div>
 			  <form class="col-xs-12 steps-form">
 	        <div class="col-xs-12">
-				    <input type="text" name="step" class="col-xs-12">
+				    <input type="text" name="step" class="col-xs-12" placeholder="e.g. First, you want to wash...">
 	        </div>
 	        <div class="col-xs-12">
 				    <input type="text" name="step" class="col-xs-12">
@@ -111,8 +111,14 @@
 	      </div>
 	    </div>    
 	    <div class="col-xs-12 buttons">
-	    	<button id="save" class="col-xs-6 col-md-4 col-center">Save</button>
-	    	<button id="back" class="col-xs-6 col-md-4 col-center"><a href="index.html">Cancel</a></button>
+	    	<div class="col-xs-12 col-md-8 col-center">
+	    		<div class="col-xs-12 col-md-6">
+	    			<button id="save" class="col-xs-12">Save</button>
+	    		</div>
+		    	<div class="col-xs-12 col-md-6">
+		    		<button id="back" class="col-xs-12"><a href="index.html">Cancel</a></button>
+		    	</div>
+	    	</div>
 	    </div>
 	    
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

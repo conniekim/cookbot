@@ -11,7 +11,7 @@ $(document).ready(function() {
 		var json = JSON.parse(JSON.stringify(data));
 		var items = json.Items;
 		var dict; 
-		if (items) {
+		if (items) { 
 			for (var i = 0; i < items.length; i++) {
 				dict = items[i];
 				// var spacedQuery = query.replace(/\_/g, " ");
@@ -39,8 +39,10 @@ $(document).ready(function() {
 	});
 });
  
- function toTitleCase(str)
+function toTitleCase(str)
 {
     return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 }
+
+
 

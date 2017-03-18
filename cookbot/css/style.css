@@ -68,13 +68,19 @@ button, .button {
 	height: 1.2em;
 }
 
+#add-btn:hover, form.recipe-button:hover {
+	-webkit-filter: contrast(0);
+    filter: contrast(0);
+    cursor: pointer;
+}
+
 .home {
 	background-color: #f7f8fa;
 	font-family: Roboto, sans-serif;
 }
 
 .home h1 {
-	font-size: 4em;
+	font-size: 4vw;
     letter-spacing: 0px;
     font-weight: 700;
     text-transform: uppercase;
@@ -93,7 +99,8 @@ button, .button {
     background: url("../img/bg.png");
     background-size: 100%;
     background-position: 0px -40px;
-    height: 500px;
+	background-repeat: no-repeat;
+    min-height: 500px;
     display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
     display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
     display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -115,11 +122,6 @@ button, .button {
 
 .home .header-text a {
 	color: #ff4431
-}
-
-.header-text a:hover {
-	color: #555555;
-	cursor: pointer;
 }
 
 .home .header .col-lg-6 {
@@ -168,7 +170,6 @@ button, .button {
   background: #8c4a4a;
   text-decoration: none;
   color: #ffffff;
-
 }
 
 .home .add-recipe {
@@ -184,10 +185,7 @@ button, .button {
 .home .section-header h1 {
 	display: inline-block;
 	color: #555;
-
 }
-
-
 
 .home h1#add-btn {
 	float: right;
@@ -216,11 +214,16 @@ a.add-btn:hover {
 .home .recipe-box {
 	padding: 20px 0;
     border-top: 1px solid #eee;
-    height: 192px;
+    min-height: 192px;
 }
 
 .home .recipe-button {
 	display: inline-block;
+}
+
+.home .recipe-button:hover {
+	cursor: pointer;
+	color: #ff4431;
 }
 
 .home .recipe-button input {
@@ -264,12 +267,85 @@ a:hover {
 /* Title */
 .header-text h1 {
 	display: inline-block;
+	cursor: pointer;
 }
 
-#settings-icon {
+#settings-icon, #menu-icon {
 	height: 2.5em;
     position: relative;
     top: 50%;
     transform: translateY(100%);
     float: right;
+}
+
+#menu-icon {
+	display: none;
+}
+
+#recipe-img {
+	background: url("../img/ingreds.svg") 0 0 no-repeat;
+	height: 40px;
+	width: 40px;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+}
+
+#filler-image {
+	background-color: #eee;
+	min-height: 192px;
+	text-align: center;
+	padding-top: 50px;
+	color: #555;
+}
+
+@media screen and (max-width: 800px) {
+	  .home .header {
+	    background-position: 0px -35px;
+	    min-height: inherit;
+	  }
+
+	  .home h1 {
+	    font-size: 3em;
+	    text-align: center;
+	  }
+
+	  .home .header-text {
+	    text-align: center;
+	  }
+
+	  #settings-icon {
+	    display: none;
+	  }
+
+	  .home .header h1 {
+	  	font-size: 2em;
+	  }
+
+	  #menu-icon {
+	    display: block;
+	    transform: translateY(80%);
+	  }
+
+	  .home .header .col-lg-6 {
+	  	width: 100%;
+	  }
+
+	  .recipe-text {
+	  	text-align: center;
+	  	padding-top: 20px;
+	  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+	.home .header {
+		min-height: 300px;
+	}
+}
+
+.col-center {
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
 }

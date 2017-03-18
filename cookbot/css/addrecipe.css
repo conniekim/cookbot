@@ -5,7 +5,7 @@ body {
 input {
   width: 100%;
   padding: 6px 10px;
-}
+} 
 
 input.back-btn {
   background-color: #ff4431;
@@ -70,13 +70,13 @@ button {
 #upload, #title-box {
   text-align: center;
   position: relative;
-  min-height: 60vh;
+  /*min-height: 60vh;*/
+  min-height: 30vh;
   margin-bottom: 20px;
 }
 
 #title-content-container {
-  height: 18vh;
-  margin-top: 30px;
+  height: 30vh;
 }
 
 #title-content-container h1 {
@@ -88,7 +88,8 @@ button {
 #upload-content-container {
   border-style: dashed;
   border-color: rgba(59, 74, 77, 0.4);
-  min-height: 60vh;
+  /*min-height: 60vh;*/
+  min-height: 30vh;
 }
 
 #upload-content, #title-content {
@@ -104,7 +105,11 @@ button {
 
 .input-header {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 24px;
+}
+
+.view-recipe-image {
+  border: none !important;
 }
 
 /* Home and container CSS */
@@ -143,6 +148,7 @@ button {
     -webkit-justify-content: center; 
     -webkit-align-items: center;
     align-items: center;
+    background-repeat: no-repeat;
 }
 
 .home .header-text {
@@ -166,9 +172,10 @@ button {
 }
 
 .header-text a:hover {
-  color: #555555;
+  /*color: #555555;*/
   cursor: pointer;
   text-decoration: none;
+  contrast: none;
 }
 
 /* Title */
@@ -176,10 +183,68 @@ button {
   display: inline-block;
 }
 
-#settings-icon {
-  height: 2.5em;
+#settings-icon, #menu-icon {
+    height: 2.5em;
     position: relative;
     top: 50%;
     transform: translateY(100%);
     float: right;
+}
+
+#menu-icon {
+  display: none;
+}
+
+#upload-content-container img {
+  max-height: 40vh;
+}
+
+.home input:hover {
+    background: #fafaf5;
+    /*box-shadow: 0 0 0 5px #fafaf5;*/
+    border-radius: 1px;
+}
+
+.home input {
+  padding-left: 5px;
+  background-color: #f7f8fa;
+  border: 1px solid #CCBFBF;
+  height: 7vh;
+  font-size: 18px;
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+button:hover {
+  background-color: #FF6757;
+}
+
+@media screen and (max-width: 800px) {
+  .home .header {
+    background-position: 0px -35px;
+  }
+
+  .home h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .home .header-text {
+    text-align: center;
+  }
+
+  #settings-icon {
+    display: none;
+  }
+
+  #menu-icon {
+    display: block;
+    transform: translateY(80%);
+  }
+
+  .home input {
+    height: 6vh;
+  }
 }
